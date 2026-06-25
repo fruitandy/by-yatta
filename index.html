@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatta — Sobre mí</title>
+    <link rel="shortcut icon" href="jelly.gif">
+    <link rel="stylesheet" href="style.css">
+    <div id="volver-atras">
+    <a href="../index.html"><img src= "arrow.gif.crdownload" style= "vertical-align: middle;"> Volver</a>
+</div>
+</head>
+    
+<body>
+
+    <div id="container">
+
+        <!-- PANEL IZQUIERDO: tarjeta personal -->
+        <div id="panel-left">
+
+            <div class="section-title"><img src= "alaizq.gif" style="width:25px;">Tarjeta Personal <img src="alader.gif" style="width:25px;"></div>
+
+            <!-- Imagen de tu Mii -->
+            <div id="mii-container">
+                <img src="mii.png" alt="Mi Mii" id="mii-img">
+            </div>
+
+            <!-- Datos personales -->
+            <div id="datos">
+                <table>
+                    <tr>
+                        <td class="label">Nombre</td>
+                        <td>Katherine Santil</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Fecha de nac.</td>
+                        <td>17-02-2005</td>
+                    </tr>
+                    <tr>
+                        <td class="label">País</td>
+                        <td>Argentina <img src = "argentina.png" style="width:14px;"> 🇦🇷</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Carrera</td>
+                        <td>Producción y Desarrollo de Videojuegos</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Pronombres</td>
+                        <td>Ella <img src = "feme.png" style="margin: 0 3px; vertical-align: middle; width:15px;"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Signo</td>
+                        <td>Acuario <img src="acuar.webp" style= "vertical-align: middle;"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Blinkies / gifs decorativos -->
+            <div id="blinkies">
+                <img src="034.gif">
+                <img src="angel.gif">
+                <img src="bailesito.webp" style="width:120px;">
+            </div>
+
+        </div>
+
+        <!-- PANEL DERECHO: descripción -->
+        <div id="panel-right">
+
+            <div class="section-title"> <img src = "tomo1.webp"> <img src = "welcom1.gif" style="width:300px;"> <img src = "tomo.webp"></div>
+
+            <div class="about-section">
+                <h3>Sobre mí<img src="booow.gif" style= "margin: 0 3px; vertical-align: middle;"></h3>
+                <p>Soy una persona creativa a la que le gusta las historias que dejan algo, las mecánicas que tienen significado, y los dettalles que la gente descubre después de un rato. Suelo pasar mucho tiempo pensando conceptos, buscando formas diferentes de hacer las cosas, aprendiendo herramientas nuevas para darles vida, y mejorando mis propias habilidades.</p>
+                <p>Si hay algo que me define, probablemente sea la curiosidad de preguntarme "y si hago esto?" y terminar dedicándole semanas enteras a la respuesta.</p>
+            </div>
+            <div class="about-section">
+                <h3>Habilidades<img src="booow.gif" style= "margin: 0 3px; vertical-align: middle;"></h3>
+                <p><img src = "espiral.gif" style= "vertical-align: middle;"> Desarrollo de videojuegos en Unity y RPG Maker <img src = "espiral.gif" style= "vertical-align: middle;"> Programación en C#</p>
+                <p><img src = "espiral.gif" style= "vertical-align: middle;"> Edición audiovisual <img src = "espiral.gif" style= "vertical-align: middle;"> Ilustración tradicional <img src = "espiral.gif" style= "vertical-align: middle;"> Escritura narrativa</p>
+                
+            </div>
+
+            <div class="about-section">
+                <h3>Me gusta <img src="booow.gif" style= "margin: 0 3px; vertical-align: middle;"></h3>
+                <p><img src = "juice5.gif"><img src = "bowl33.gif"><img src = "rice8.gif"><img src = "meat4.gif"><img src = "burger.gif"><img src = "papas.gif"><img src = "hotdog.gif"><img src = "sandwich.gif"><img src = "pocky3.gif"><img src = "popcorntub.gif"><img src = "choc18.gif"><img src = "crepe.gif"><img src = "cookie24.png"><img src = "macaron.gif"><img src = "cake32.gif"><img src = "cake36.gif"><img src = "flan2.gif"><img src = "icecream13.gif"><img src = "frutilla.gif"><img src = "melon3.gif"><img src = "axolotl.gif"><img src = "dogwhite.gif"><img src = "bunny43.gif"><img src = "hamster19.gif"><img src = "cat9.gif"><img src = "horse9.gif"><img src = "fox.gif"><img src = "clownfishswim.gif"><img src = "butterfly3.gif"><img src = "hellokitty.gif"><img src = "stitch.gif"><img src = "sirenita.gif"><img src = "kirby1.gif"><img src = "trunks1.gif"><img src = "totoro.webp"><img src = "rings.gif"><img src = "acnh.gif"><img src = "decor.gif"><img src = "paper5.gif"><img src = "palette.gif"><img src = "toy11.gif"><img src = "camera6.gif"><img src = "console6.gif"><img src = "console9.gif"><img src = "lipstick4.gif"><img src = "burbujas.gif"><img src = "clover2.gif"><img src = "nota.gif"><img src = "light7.gif"><img src = "yellow11.gif"><img src = "water5.gif"><img src = "rainbow11.gif"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // Cursor personalizado
+        const cursor = document.createElement('img');
+        cursor.src = 'cursor.gif';
+        cursor.style.position = 'fixed';
+        cursor.style.pointerEvents = 'none';
+        cursor.style.width = '32px';
+        cursor.style.zIndex = '9999';
+        cursor.style.top = '0px';
+        cursor.style.left = '0px';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', function(e) {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Sparkles
+        document.addEventListener('mousemove', function(e) {
+            const sparkle = document.createElement('div');
+            sparkle.style.position = 'fixed';
+            sparkle.style.left = e.clientX + 'px';
+            sparkle.style.top = e.clientY + 'px';
+            sparkle.style.pointerEvents = 'none';
+            sparkle.style.zIndex = '9998';
+            sparkle.style.fontSize = '14px';
+            sparkle.style.userSelect = 'none';
+            sparkle.innerHTML = '✦';
+            sparkle.style.color = ['#ffb8d0', '#e8a0ea', '#fff0b8', '#ffffff'][Math.floor(Math.random() * 4)];
+            document.body.appendChild(sparkle);
+
+            let opacity = 1;
+            let top = e.clientY;
+            const fall = setInterval(function() {
+                opacity -= 0.05;
+                top += 1;
+                sparkle.style.opacity = opacity;
+                sparkle.style.top = top + 'px';
+                if (opacity <= 0) {
+                    clearInterval(fall);
+                    sparkle.remove();
+                }
+            }, 30);
+        });
+    </script>
+
+</body>
+</html>
